@@ -202,7 +202,7 @@
 
   <!-- PAGE 2 -->
   <div class="page" id="page2">
-    <div class="notice">📋 Material asignado a <strong id="tienda-label"></strong> para la campaña <em>Guacamole Bacon, Nuevos CJr Packs y Burger Day</em>.</div>
+    <div class="notice">📋 Material asignado a <strong id="tienda-label"></strong>.</div>
     <div class="card">
       <div class="card-title">📦 Material – <span id="tienda-title2" style="color:var(--text-dark);font-weight:900;"></span></div>
       <div id="material-list"></div>
@@ -243,7 +243,7 @@
       </div>
       <div class="checkbox-confirm">
         <input type="checkbox" id="cb-enterado" onchange="checkConfirm()">
-        <label for="cb-enterado">Confirmo que revisé el listado de material asignado a mi tienda para la campaña <strong>Día del Niño y Gooold Star Burger</strong>.</label>
+        <label for="cb-enterado">Confirmo que revisé el listado de material asignado a mi tienda.</label>
       </div>
       <div class="checkbox-confirm" id="cb-recibio-wrap" style="background:#e8f5e9;border-color:#00A36C;display:none;">
         <input type="checkbox" id="cb-recibio" onchange="checkConfirm()">
@@ -300,7 +300,7 @@
 // ================================================================
 // CONFIGURACIÓN — solo edita esta sección
 // ================================================================
-const FORM_ID = '1FAIpQLSfrrxjIVbxbSP_9g4RzMe9_sHlZhN6twSDEi_g7TZUgy2C5xA';
+const FORM_ID = 'e/1FAIpQLSfrrxjIVbxbSP_9g4RzMe9_sHlZhN6twSDEi_g7TZUgy2C5xA';
 const E = {                              // entries del formulario
   tienda:      'entry.486873630',
   gerente:     'entry.1115934560',
@@ -344,21 +344,21 @@ const MAT = {
 };
 const MLAB = {
   // Guacamole Bacon
-  gbPosterVentana:         { icon:'🖼️', name:'Póster ventana',                det:'Guacamole Bacon' },
-  gbTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional',         det:'Guacamole Bacon' },
-  gbTransliteRoller:       { icon:'🖼️', name:'Translite roller',              det:'Guacamole Bacon' },
-  gbVolantes:              { icon:'📄', name:'Volantes',                       det:'Guacamole Bacon' },
-  gbMenusMano:             { icon:'📋', name:'Menús de mano',                  det:'Guacamole Bacon' },
+  gbPosterVentana:         { icon:'🖼️', name:'Póster ventana',       det:'Guacamole Bacon' },
+  gbTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional', det:'Guacamole Bacon' },
+  gbTransliteRoller:       { icon:'🖼️', name:'Translite roller',      det:'Guacamole Bacon' },
+  gbVolantes:              { icon:'📄', name:'Volantes',              det:'Guacamole Bacon' },
+  gbMenusMano:             { icon:'📋', name:'Menús de mano',         det:'Guacamole Bacon' },
   // Carl's Packs
-  cpPosterVentana:         { icon:'🖼️', name:'Póster ventana',                det:'Carl\'s Packs' },
-  cpTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional',         det:'Carl\'s Packs' },
-  cpTransliteRoller:       { icon:'🖼️', name:'Translite roller',              det:'Carl\'s Packs' },
-  cpDriveThruExtender:     { icon:'🚗', name:'Drive thru extender',           det:'Carl\'s Packs' },
-  cpRegisterCards:         { icon:'🃏', name:'Register cards',                 det:'Carl\'s Packs' },
-  cpVolantes:              { icon:'📄', name:'Volantes',                       det:'Carl\'s Packs' },
+  cpPosterVentana:         { icon:'🖼️', name:'Póster ventana',       det:"Carl's Packs" },
+  cpTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional', det:"Carl's Packs" },
+  cpTransliteRoller:       { icon:'🖼️', name:'Translite roller',      det:"Carl's Packs" },
+  cpDriveThruExtender:     { icon:'🚗', name:'Drive thru extender',  det:"Carl's Packs" },
+  cpRegisterCards:         { icon:'🃏', name:'Register cards',        det:"Carl's Packs" },
+  cpVolantes:              { icon:'📄', name:'Volantes',              det:"Carl's Packs" },
   // Burger Day
-  bdLetreroMostrador:      { icon:'🪧', name:'Letrero mostrador',              det:'Burger Day' },
-  bdSenal:                 { icon:'🚦', name:'Señal',                          det:'Burger Day' },
+  bdLetreroMostrador:      { icon:'🪧', name:'Letrero mostrador',     det:'Burger Day' },
+  bdSenal:                 { icon:'🚦', name:'Señal',                 det:'Burger Day' },
 };
 
 // ================================================================
