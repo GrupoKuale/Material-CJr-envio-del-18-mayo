@@ -11,7 +11,7 @@
     --text-dark: #1a0a12; --text-mid: #5a3a4a; --text-light: #b07090;
     --accent-gold: #FFB800; --success: #00A36C;
     --border: #f0d6e4; --shadow: 0 4px 24px rgba(212,36,106,0.10);
-    --cjr-red: #C8102E; --cjr-red-dark: #9b0c23; --cjr-yellow: #FFC72C;
+    --cjr-red: #d41f5f; --cjr-red-dark: #a8174a; --cjr-yellow: #FFC72C;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Nunito Sans',sans-serif; background:var(--warm-bg); color:var(--text-dark); min-height:100vh; }
@@ -23,8 +23,8 @@
   .pxc-track-title { font-family:'Nunito',sans-serif; font-weight:900; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--cjr-yellow); }
   .pxc-topbar-right { font-family:'Nunito Sans',sans-serif; font-size:10px; color:rgba(255,255,255,0.35); text-align:right; line-height:1.4; }
 
-  .hero { background:linear-gradient(145deg,#7a0616 0%,#C8102E 45%,#e0334a 70%,#f05a6e 100%); padding:36px 20px 48px; text-align:center; position:relative; overflow:hidden; }
-  .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 75% 15%,rgba(255,199,44,0.22) 0%,transparent 55%),radial-gradient(ellipse at 15% 85%,rgba(200,16,46,0.18) 0%,transparent 50%); }
+  .hero { background:linear-gradient(145deg,#8a1040 0%,#d41f5f 45%,#e84070 70%,#f06080 100%); padding:36px 20px 48px; text-align:center; position:relative; overflow:hidden; }
+  .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 75% 15%,rgba(255,199,44,0.22) 0%,transparent 55%),radial-gradient(ellipse at 15% 85%,rgba(212,31,95,0.18) 0%,transparent 50%); }
   .hero h1 { font-family:'Nunito',sans-serif; font-weight:900; font-size:clamp(26px,5vw,42px); color:white; line-height:1.15; position:relative; text-shadow:0 2px 16px rgba(0,0,0,0.25); }
   .hero h1 em { font-style:normal; color:var(--cjr-yellow); }
   .hero-date { display:inline-block; margin-top:12px; background:#252525; color:white; font-family:'Nunito',sans-serif; font-weight:800; font-size:14px; padding:6px 18px; border-radius:50px; position:relative; }
@@ -36,7 +36,7 @@
   .step { display:flex; flex-direction:column; align-items:center; gap:4px; flex:1; max-width:160px; }
   .step-num { width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Nunito',sans-serif; font-weight:800; font-size:14px; transition:all 0.3s; }
   .step-label { font-size:11px; color:var(--text-light); font-weight:600; text-align:center; }
-  .step.active .step-num { background:var(--cjr-red); color:white; box-shadow:0 0 0 4px rgba(200,16,46,0.18); }
+  .step.active .step-num { background:var(--cjr-red); color:white; box-shadow:0 0 0 4px rgba(212,31,95,0.18); }
   .step.done .step-num { background:var(--success); color:white; }
   .step.pending .step-num { background:#e2d6f0; color:var(--text-light); }
   .step-line { flex:1; height:2px; background:#e2d6f0; max-width:60px; transition:background 0.4s; }
@@ -50,7 +50,7 @@
   .tiendas-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; }
   .tienda-btn { border:2px solid var(--border); border-radius:12px; padding:14px 10px; text-align:center; cursor:pointer; transition:all 0.2s; background:white; font-family:'Nunito',sans-serif; font-weight:700; font-size:13px; color:var(--text-dark); position:relative; }
   .tienda-btn:hover { border-color:var(--cjr-red); background:#fce8ec; }
-  .tienda-btn.selected { border-color:var(--cjr-red); background:var(--cjr-red); color:white; box-shadow:0 4px 14px rgba(200,16,46,0.3); transform:translateY(-1px); }
+  .tienda-btn.selected { border-color:var(--cjr-red); background:var(--cjr-red); color:white; box-shadow:0 4px 14px rgba(212,31,95,0.3); transform:translateY(-1px); }
   .tienda-btn .store-icon { font-size:22px; display:block; margin-bottom:6px; }
   .tienda-btn.confirmada { border-color:#00A36C; background:#f0fdf4; }
   .tienda-btn.confirmada::after { content:'✅'; position:absolute; top:5px; right:7px; font-size:12px; }
@@ -101,11 +101,11 @@
   .field-group { margin-bottom:18px; }
   .field-label { display:block; font-size:12px; font-weight:700; color:var(--text-mid); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; }
   .field-input { width:100%; padding:12px 16px; border:1.5px solid var(--border); border-radius:10px; font-family:'Nunito Sans',sans-serif; font-size:14px; color:var(--text-dark); transition:border-color 0.2s; background:white; }
-  .field-input:focus { outline:none; border-color:var(--cjr-red); box-shadow:0 0 0 3px rgba(200,16,46,0.10); }
+  .field-input:focus { outline:none; border-color:var(--cjr-red); box-shadow:0 0 0 3px rgba(212,31,95,0.10); }
   textarea.field-input { resize:vertical; min-height:90px; }
 
-  .btn-primary { width:100%; padding:16px; background:linear-gradient(135deg,var(--cjr-red) 0%,var(--cjr-red-dark) 100%); color:white; border:none; border-radius:14px; font-family:'Nunito',sans-serif; font-weight:800; font-size:16px; cursor:pointer; transition:all 0.2s; box-shadow:0 6px 20px rgba(200,16,46,0.35); }
-  .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 26px rgba(200,16,46,0.45); }
+  .btn-primary { width:100%; padding:16px; background:linear-gradient(135deg,var(--cjr-red) 0%,var(--cjr-red-dark) 100%); color:white; border:none; border-radius:14px; font-family:'Nunito',sans-serif; font-weight:800; font-size:16px; cursor:pointer; transition:all 0.2s; box-shadow:0 6px 20px rgba(212,31,95,0.35); }
+  .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 26px rgba(212,31,95,0.45); }
   .btn-primary:disabled { background:#ccc; box-shadow:none; cursor:not-allowed; transform:none; }
   .btn-secondary { width:100%; padding:12px; background:transparent; color:var(--cjr-red); border:2px solid var(--cjr-red); border-radius:14px; font-family:'Nunito',sans-serif; font-weight:700; font-size:14px; cursor:pointer; transition:all 0.2s; margin-top:10px; }
   .btn-secondary:hover { background:#fce8ec; }
@@ -297,11 +297,8 @@
 </div>
 
 <script>
-// ================================================================
-// CONFIGURACIÓN — solo edita esta sección
-// ================================================================
 const FORM_ID = 'e/1FAIpQLSfrrxjIVbxbSP_9g4RzMe9_sHlZhN6twSDEi_g7TZUgy2C5xA';
-const E = {                              // entries del formulario
+const E = {
   tienda:      'entry.486873630',
   gerente:     'entry.1115934560',
   telefono:    'entry.1289800735',
@@ -310,19 +307,13 @@ const E = {                              // entries del formulario
   material:    'entry.1167343978',
   notas:       'entry.1016722540',
   recibio:     'entry.1706857065',
-  fotos:       'entry.872814572',        // URLs de evidencia fotográfica
+  fotos:       'entry.872814572',
 };
 
 const SHEET_ID  = '1NiZg8GVGbKyx9LmjcUdr6SwQr8jMnYq5VrTnkPRSxPA';
 const SHEET_GID = '64084804';
-
-// ImgBB — la API pública NO permite asignar álbum directamente.
-// Las fotos van a tu cuenta y se nombran con folio+tienda para identificarlas.
 const IMGBB_KEY = 'f5dfbf1d13ab43ae1e1df0e7c9db8dd1';
 
-// ================================================================
-// DATOS
-// ================================================================
 const ALL_STORES = ['CJR Hidalgo','CJR Universidad','CJR Centro','CJR Victoria','CJR Altama','CJR Norte'];
 
 const PICKUP_MAP = {
@@ -331,7 +322,7 @@ const PICKUP_MAP = {
 };
 const PICKUPS = {
   gestor:     { type:'gestor',     icon:'🚗', badge:'Recorrido – Gestor',              name:'Entrega directa en sucursal',        detail:'Recibirás el material directamente en tu tienda.', notice:'📲 <strong>Pendiente:</strong> Te contactaremos por WhatsApp para confirmar la fecha.' },
-  estadio:       { type:'estadio',       icon:'🏢', badge:'Recolección – Oficinas Calle Estadio', name:'Oficinas Calle Estadio',            detail:'Calle Estadio 203, Col. Petrolera, Tampico, Tam. CP 89110', notice:'⏰ <strong>Horario:</strong> Lun–Vie 9:00 a 18:00 hrs.' },
+  estadio:    { type:'estadio',    icon:'🏢', badge:'Recolección – Oficinas Calle Estadio', name:'Oficinas Calle Estadio',        detail:'Calle Estadio 203, Col. Petrolera, Tampico, Tam. CP 89110', notice:'⏰ <strong>Horario:</strong> Lun–Vie 9:00 a 18:00 hrs.' },
   paqueteria: { type:'paqueteria', icon:'📦', badge:'Envío por Paquetería',            name:'Recibe en tu tienda por paquetería', detail:'El material se envía directamente a tu tienda.', notice:'📬 <strong>Pendiente:</strong> Te enviaremos el número de guía por WhatsApp.' },
 };
 const MAT = {
@@ -343,55 +334,41 @@ const MAT = {
   'CJR Victoria':    { gbTransliteRoller:4, gbPosterVentana:1, gbVolantes:1000, cpTransliteRoller:2, cpPosterVentana:1, cpDriveThruExtender:1, cpRegisterCards:2, cpVolantes:1000, bdSenal:1 },
 };
 const MLAB = {
-  // Guacamole Bacon
   gbPosterVentana:         { icon:'🖼️', name:'Póster ventana',       det:'Guacamole Bacon' },
   gbTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional', det:'Guacamole Bacon' },
   gbTransliteRoller:       { icon:'🖼️', name:'Translite roller',      det:'Guacamole Bacon' },
   gbVolantes:              { icon:'📄', name:'Volantes',              det:'Guacamole Bacon' },
   gbMenusMano:             { icon:'📋', name:'Menús de mano',         det:'Guacamole Bacon' },
-  // Carl's Packs
   cpPosterVentana:         { icon:'🖼️', name:'Póster ventana',       det:"Carl's Packs" },
   cpTransliteTradicional:  { icon:'🖼️', name:'Translite tradicional', det:"Carl's Packs" },
   cpTransliteRoller:       { icon:'🖼️', name:'Translite roller',      det:"Carl's Packs" },
   cpDriveThruExtender:     { icon:'🚗', name:'Drive thru extender',  det:"Carl's Packs" },
   cpRegisterCards:         { icon:'🃏', name:'Register cards',        det:"Carl's Packs" },
   cpVolantes:              { icon:'📄', name:'Volantes',              det:"Carl's Packs" },
-  // Burger Day
   bdLetreroMostrador:      { icon:'🪧', name:'Letrero mostrador',     det:'Burger Day' },
   bdSenal:                 { icon:'🚦', name:'Señal',                 det:'Burger Day' },
 };
 
-// ================================================================
-// ESTADO
-// ================================================================
 let tienda = null, folio = null;
 let recibidos = {}, fotos = [];
 let sheetTimer = null, cachedConf = [];
 
-// ================================================================
-// GOOGLE SHEETS POLLING
-// ================================================================
 async function loadSheet() {
   const dot = document.getElementById('sync-dot');
   try {
     const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&gid=${SHEET_GID}&t=${Date.now()}`;
     const res  = await fetch(url);
     const txt  = await res.text();
-    // Extraer JSON de la respuesta de Google Visualization
     const match = txt.match(/google\.visualization\.Query\.setResponse\((\{[\s\S]*\})\)/);
     if (!match) throw new Error('Formato inesperado');
     const data = JSON.parse(match[1]);
     const cols = (data.table.cols || []).map(c => (c.label || c.id || '').toLowerCase());
-
-    // Buscar columna tienda y columna recibieron
     let colT = cols.findIndex(h => h.includes('tienda'));
     let colR = cols.findIndex(h => h.includes('recibieron') || h.includes('recibio') || h.includes('recib'));
-    if (colT < 0) colT = 1; // fallback columna B
-
+    if (colT < 0) colT = 1;
     const seen = new Set();
     (data.table.rows || []).forEach(row => {
       if (!row || !row.c) return;
-      // Solo marcar confirmada si tiene valor en col recibieron (o si no existe esa col)
       if (colR >= 0) {
         const v = row.c[colR] && row.c[colR].v ? String(row.c[colR].v).trim() : '';
         if (!v) return;
@@ -433,9 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
   sheetTimer = setInterval(loadSheet, 30000);
 });
 
-// ================================================================
-// NAVEGACIÓN
-// ================================================================
 function goToPage(n) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page' + n).classList.add('active');
@@ -469,9 +443,6 @@ function selectTienda(el, name) {
   document.getElementById('btn1').disabled = false;
 }
 
-// ================================================================
-// HELPERS DE CONTENIDO
-// ================================================================
 function renderMaterial() {
   document.getElementById('tienda-label').textContent  = tienda;
   document.getElementById('tienda-title2').textContent = tienda;
@@ -518,7 +489,6 @@ function toggleRec(key, btn) {
   row.style.borderColor = rec ? '#A5D6A7' : '';
   row.style.background  = rec ? '#F9FFF9' : '';
   if (qty) qty.style.background = rec ? '#2E7D32' : '';
-  // Sincronizar checkbox "ya recibí todo"
   const allKeys = Object.keys(MAT[tienda] || {});
   const allRec  = allKeys.every(k => recibidos[tienda] && recibidos[tienda][k]);
   const cb = document.getElementById('cb-recibio');
@@ -564,11 +534,7 @@ function checkConfirm() {
   document.getElementById('btn4').disabled = !ok;
 }
 
-// ================================================================
-// ENVÍO AL FORMULARIO (UN SOLO POST con todos los campos)
-// ================================================================
 function postToForms(fields) {
-  // Construimos la URL + la enviamos via iframe oculto
   const base = `https://docs.google.com/forms/d/${FORM_ID}/formResponse`;
   const ifrId = 'gf-' + Date.now();
   const ifr   = Object.assign(document.createElement('iframe'), { name:ifrId, style:'display:none' });
@@ -597,7 +563,6 @@ function submitConfirm() {
 
   folio = 'CJR26-' + tienda.replace(/[^A-Za-z]/g,'').toUpperCase().slice(0,6) + '-' + Date.now().toString().slice(-6);
 
-  // POST completo al formulario (todos los campos del forms en un solo envío)
   postToForms({
     [E.tienda]:   tienda,
     [E.gerente]:  nombre,
@@ -618,11 +583,6 @@ function submitConfirm() {
   goToPage(5);
 }
 
-// ================================================================
-// FOTOS – ImgBB sin album (API pública no lo soporta)
-// El nombre de cada imagen incluye folio+tienda para identificarlas
-// en tu cuenta de ImgBB
-// ================================================================
 const MAX_F = 5;
 
 function handlePhotos(input) {
@@ -659,7 +619,6 @@ async function uploadOne(foto, idx) {
     const fd = new FormData();
     fd.append('key',   IMGBB_KEY);
     fd.append('image', foto.data.split(',')[1]);
-    // Nombre = folio + tienda + índice → fácil de identificar en ImgBB
     const nombre = (folio + '-' + tienda + '-f' + (idx+1)).replace(/[^a-zA-Z0-9-]/g,'-');
     fd.append('name',  nombre);
     const res  = await fetch('https://api.imgbb.com/1/upload', {method:'POST', body:fd});
@@ -685,7 +644,6 @@ async function submitFotos() {
 
   const urlStr = urls.filter(u => u !== '(error)').join(' | ');
 
-  // Enviar URLs al forms en el mismo entry (un solo POST con folio + fotos)
   if (urlStr) {
     postToForms({ [E.folio]: folio, [E.fotos]: urlStr });
   }
@@ -693,7 +651,6 @@ async function submitFotos() {
   if (st) { st.style.display='none'; }
   btn.disabled = false;
 
-  // Mostrar en pantalla de éxito
   const ref = document.getElementById('success-ref');
   if (ref && urlStr) ref.innerHTML += '<br>📸 Fotos: ' + urls.map((u,i) =>
     u !== '(error)' ? `<a href="${u}" target="_blank" style="color:#00785a;">Foto ${i+1}</a>` : `Foto ${i+1} (error)`
@@ -711,9 +668,6 @@ async function submitFotos() {
 
 function skipFotos() { goToPage(6); updateSteps(6); }
 
-// ================================================================
-// RESET
-// ================================================================
 function resetAll() {
   tienda = null; folio = null; recibidos = {}; fotos = [];
   document.querySelectorAll('.tienda-btn').forEach(b => b.classList.remove('selected'));
